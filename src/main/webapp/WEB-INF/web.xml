@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>ChatBot</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ChatbotService</display-name>
+    <servlet-name>ChatbotService</servlet-name>
+    <servlet-class>com.bhavdeep.ChatbotService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatbotService</servlet-name>
+    <url-pattern>/ChatbotService</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChatBotServlet</display-name>
+    <servlet-name>ChatBotServlet</servlet-name>
+    <servlet-class>ChatBotServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ChatBotServlet</servlet-name>
+    <url-pattern>/ChatBotServlet</url-pattern>
+</servlet-mapping>
+</web-app>
